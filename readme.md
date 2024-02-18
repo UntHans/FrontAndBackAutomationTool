@@ -23,7 +23,7 @@ This project is designed for automated testing of both frontend and backend comp
 2. Navigate to the project directory:
 
     ```bash
-    cd your-project
+    cd FrontAndBackAutomationTool
     ```
 
 3. Install dependencies:
@@ -57,6 +57,16 @@ Run regression tests (both frontend and backend):
 ```bash
 npm run testregression
 ```
+
+### View HTML Reports:
+
+Once the tests are completed, HTML reports will be generated in the tests_output directory.
+Open the HTML reports in your preferred web browser.
+
+#### Example:
+Front End Report: tests_output/fe/nightwatch-html-report/index.html
+Back End Report: tests_output/be/nightwatch-html-report/index.html
+You can navigate to these directories and open the index.html file to view detailed test reports.
 
 ### Docker (Optional)
 If you have Docker installed, you can use the provided Dockerfile:
