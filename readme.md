@@ -17,7 +17,7 @@ This project is designed for automated testing of both frontend and backend comp
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/UntHans/FrontAndBackAutomationTool.git
     ```
 
 2. Navigate to the project directory:
