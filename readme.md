@@ -39,7 +39,7 @@ This project is designed for automated testing of both frontend and backend comp
 Run the frontend tests:
 
 ```bash
-npm run testfe:
+npm run testfe
 ```
 
 #### Backend Tests Only 
