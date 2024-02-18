@@ -1,0 +1,1114 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1708202826.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"properties": {
+			"name": {
+				"$id": "#root/items/name", 
+				"title": "Name", 
+				"type": "object",
+				"properties": {
+					"common": {
+						"$id": "#root/items/name/common", 
+						"title": "Common", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"official": {
+						"$id": "#root/items/name/official", 
+						"title": "Official", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"nativeName": {
+						"$id": "#root/items/name/nativeName", 
+						"title": "Nativename", 
+						"type": "object",
+						"properties": {
+							"ell": {
+								"$id": "#root/items/name/nativeName/ell", 
+								"title": "Ell", 
+								"type": "object",
+								"properties": {
+									"official": {
+										"$id": "#root/items/name/nativeName/ell/official", 
+										"title": "Official", 
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									},
+									"common": {
+										"$id": "#root/items/name/nativeName/ell/common", 
+										"title": "Common", 
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									}
+								}
+							}
+,
+							"tur": {
+								"$id": "#root/items/name/nativeName/tur", 
+								"title": "Tur", 
+								"type": "object",
+								"properties": {
+									"official": {
+										"$id": "#root/items/name/nativeName/tur/official", 
+										"title": "Official", 
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									},
+									"common": {
+										"$id": "#root/items/name/nativeName/tur/common", 
+										"title": "Common", 
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									}
+								}
+							}
+
+						}
+					}
+
+				}
+			}
+,
+			"tld": {
+				"$id": "#root/items/tld", 
+				"title": "Tld", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/tld/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			},
+			"cca2": {
+				"$id": "#root/items/cca2", 
+				"title": "Cca2", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"ccn3": {
+				"$id": "#root/items/ccn3", 
+				"title": "Ccn3", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"cca3": {
+				"$id": "#root/items/cca3", 
+				"title": "Cca3", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"cioc": {
+				"$id": "#root/items/cioc", 
+				"title": "Cioc", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"independent": {
+				"$id": "#root/items/independent", 
+				"title": "Independent", 
+				"type": "boolean",
+				"default": true
+			},
+			"status": {
+				"$id": "#root/items/status", 
+				"title": "Status", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"unMember": {
+				"$id": "#root/items/unMember", 
+				"title": "Unmember", 
+				"type": "boolean",
+				"default": true
+			},
+			"currencies": {
+				"$id": "#root/items/currencies", 
+				"title": "Currencies", 
+				"type": "object",
+				"properties": {
+					"EUR": {
+						"$id": "#root/items/currencies/EUR", 
+						"title": "Eur", 
+						"type": "object",
+						"properties": {
+							"name": {
+								"$id": "#root/items/currencies/EUR/name", 
+								"title": "Name", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"symbol": {
+								"$id": "#root/items/currencies/EUR/symbol", 
+								"title": "Symbol", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+
+				}
+			}
+,
+			"idd": {
+				"$id": "#root/items/idd", 
+				"title": "Idd", 
+				"type": "object",
+				"properties": {
+					"root": {
+						"$id": "#root/items/idd/root", 
+						"title": "Root", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"suffixes": {
+						"$id": "#root/items/idd/suffixes", 
+						"title": "Suffixes", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/items/idd/suffixes/items", 
+							"title": "Items", 
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						}
+					}
+				}
+			}
+,
+			"capital": {
+				"$id": "#root/items/capital", 
+				"title": "Capital", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/capital/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			},
+			"altSpellings": {
+				"$id": "#root/items/altSpellings", 
+				"title": "Altspellings", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/altSpellings/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			},
+			"region": {
+				"$id": "#root/items/region", 
+				"title": "Region", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"subregion": {
+				"$id": "#root/items/subregion", 
+				"title": "Subregion", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"languages": {
+				"$id": "#root/items/languages", 
+				"title": "Languages", 
+				"type": "object",
+				"properties": {
+					"ell": {
+						"$id": "#root/items/languages/ell", 
+						"title": "Ell", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"tur": {
+						"$id": "#root/items/languages/tur", 
+						"title": "Tur", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+,
+			"translations": {
+				"$id": "#root/items/translations", 
+				"title": "Translations", 
+				"type": "object",
+				"properties": {
+					"ara": {
+						"$id": "#root/items/translations/ara", 
+						"title": "Ara", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/ara/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/ara/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"bre": {
+						"$id": "#root/items/translations/bre", 
+						"title": "Bre", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/bre/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/bre/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"ces": {
+						"$id": "#root/items/translations/ces", 
+						"title": "Ces", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/ces/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/ces/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"cym": {
+						"$id": "#root/items/translations/cym", 
+						"title": "Cym", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/cym/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/cym/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"deu": {
+						"$id": "#root/items/translations/deu", 
+						"title": "Deu", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/deu/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/deu/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"est": {
+						"$id": "#root/items/translations/est", 
+						"title": "Est", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/est/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/est/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"fin": {
+						"$id": "#root/items/translations/fin", 
+						"title": "Fin", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/fin/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/fin/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"fra": {
+						"$id": "#root/items/translations/fra", 
+						"title": "Fra", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/fra/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/fra/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"hrv": {
+						"$id": "#root/items/translations/hrv", 
+						"title": "Hrv", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/hrv/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/hrv/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"hun": {
+						"$id": "#root/items/translations/hun", 
+						"title": "Hun", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/hun/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/hun/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"ita": {
+						"$id": "#root/items/translations/ita", 
+						"title": "Ita", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/ita/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/ita/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"jpn": {
+						"$id": "#root/items/translations/jpn", 
+						"title": "Jpn", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/jpn/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/jpn/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"kor": {
+						"$id": "#root/items/translations/kor", 
+						"title": "Kor", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/kor/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/kor/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"nld": {
+						"$id": "#root/items/translations/nld", 
+						"title": "Nld", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/nld/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/nld/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"per": {
+						"$id": "#root/items/translations/per", 
+						"title": "Per", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/per/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/per/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"pol": {
+						"$id": "#root/items/translations/pol", 
+						"title": "Pol", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/pol/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/pol/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"por": {
+						"$id": "#root/items/translations/por", 
+						"title": "Por", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/por/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/por/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"rus": {
+						"$id": "#root/items/translations/rus", 
+						"title": "Rus", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/rus/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/rus/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"slk": {
+						"$id": "#root/items/translations/slk", 
+						"title": "Slk", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/slk/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/slk/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"spa": {
+						"$id": "#root/items/translations/spa", 
+						"title": "Spa", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/spa/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/spa/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"srp": {
+						"$id": "#root/items/translations/srp", 
+						"title": "Srp", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/srp/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/srp/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"swe": {
+						"$id": "#root/items/translations/swe", 
+						"title": "Swe", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/swe/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/swe/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"tur": {
+						"$id": "#root/items/translations/tur", 
+						"title": "Tur", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/tur/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/tur/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"urd": {
+						"$id": "#root/items/translations/urd", 
+						"title": "Urd", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/urd/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/urd/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"zho": {
+						"$id": "#root/items/translations/zho", 
+						"title": "Zho", 
+						"type": "object",
+						"properties": {
+							"official": {
+								"$id": "#root/items/translations/zho/official", 
+								"title": "Official", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"common": {
+								"$id": "#root/items/translations/zho/common", 
+								"title": "Common", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+
+				}
+			}
+,
+			"latlng": {
+				"$id": "#root/items/latlng", 
+				"title": "Latlng", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/latlng/items", 
+					"title": "Items", 
+					"type": "number",
+					"default": 0.0
+				}
+			},
+			"landlocked": {
+				"$id": "#root/items/landlocked", 
+				"title": "Landlocked", 
+				"type": "boolean",
+				"default": true
+			},
+			"area": {
+				"$id": "#root/items/area", 
+				"title": "Area", 
+				"type": "number",
+				"default": 0.0
+			},
+			"demonyms": {
+				"$id": "#root/items/demonyms", 
+				"title": "Demonyms", 
+				"type": "object",
+				"properties": {
+					"eng": {
+						"$id": "#root/items/demonyms/eng", 
+						"title": "Eng", 
+						"type": "object",
+						"properties": {
+							"f": {
+								"$id": "#root/items/demonyms/eng/f", 
+								"title": "F", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"m": {
+								"$id": "#root/items/demonyms/eng/m", 
+								"title": "M", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"fra": {
+						"$id": "#root/items/demonyms/fra", 
+						"title": "Fra", 
+						"type": "object",
+						"properties": {
+							"f": {
+								"$id": "#root/items/demonyms/fra/f", 
+								"title": "F", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							},
+							"m": {
+								"$id": "#root/items/demonyms/fra/m", 
+								"title": "M", 
+								"type": "string",
+								"default": "",
+								"pattern": "^.*$"
+							}
+						}
+					}
+
+				}
+			}
+,
+			"flag": {
+				"$id": "#root/items/flag", 
+				"title": "Flag", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"maps": {
+				"$id": "#root/items/maps", 
+				"title": "Maps", 
+				"type": "object",
+				"properties": {
+					"googleMaps": {
+						"$id": "#root/items/maps/googleMaps", 
+						"title": "Googlemaps", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"openStreetMaps": {
+						"$id": "#root/items/maps/openStreetMaps", 
+						"title": "Openstreetmaps", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+,
+			"population": {
+				"$id": "#root/items/population", 
+				"title": "Population", 
+				"type": "integer",
+				"default": 0
+			},
+			"gini": {
+				"$id": "#root/items/gini", 
+				"title": "Gini", 
+				"type": "object",
+				"properties": {
+					"2018": {
+						"$id": "#root/items/gini/2018", 
+						"title": "2018", 
+						"type": "number",
+						"default": 0.0
+					}
+				}
+			}
+,
+			"fifa": {
+				"$id": "#root/items/fifa", 
+				"title": "Fifa", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"car": {
+				"$id": "#root/items/car", 
+				"title": "Car", 
+				"type": "object",
+				"properties": {
+					"signs": {
+						"$id": "#root/items/car/signs", 
+						"title": "Signs", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/items/car/signs/items", 
+							"title": "Items", 
+							"type": "string",
+							"default": "",
+							"pattern": "^.*$"
+						}
+					},
+					"side": {
+						"$id": "#root/items/car/side", 
+						"title": "Side", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+,
+			"timezones": {
+				"$id": "#root/items/timezones", 
+				"title": "Timezones", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/timezones/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			},
+			"continents": {
+				"$id": "#root/items/continents", 
+				"title": "Continents", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/continents/items", 
+					"title": "Items", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			},
+			"flags": {
+				"$id": "#root/items/flags", 
+				"title": "Flags", 
+				"type": "object",
+				"properties": {
+					"png": {
+						"$id": "#root/items/flags/png", 
+						"title": "Png", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"svg": {
+						"$id": "#root/items/flags/svg", 
+						"title": "Svg", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"alt": {
+						"$id": "#root/items/flags/alt", 
+						"title": "Alt", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+,
+			"coatOfArms": {
+				"$id": "#root/items/coatOfArms", 
+				"title": "Coatofarms", 
+				"type": "object",
+				"properties": {
+					"png": {
+						"$id": "#root/items/coatOfArms/png", 
+						"title": "Png", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"svg": {
+						"$id": "#root/items/coatOfArms/svg", 
+						"title": "Svg", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+,
+			"startOfWeek": {
+				"$id": "#root/items/startOfWeek", 
+				"title": "Startofweek", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"capitalInfo": {
+				"$id": "#root/items/capitalInfo", 
+				"title": "Capitalinfo", 
+				"type": "object",
+				"properties": {
+					"latlng": {
+						"$id": "#root/items/capitalInfo/latlng", 
+						"title": "Latlng", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/items/capitalInfo/latlng/items", 
+							"title": "Items", 
+							"type": "number",
+							"default": 0.0
+						}
+					}
+				}
+			}
+,
+			"postalCode": {
+				"$id": "#root/items/postalCode", 
+				"title": "Postalcode", 
+				"type": "object",
+				"properties": {
+					"format": {
+						"$id": "#root/items/postalCode/format", 
+						"title": "Format", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"regex": {
+						"$id": "#root/items/postalCode/regex", 
+						"title": "Regex", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		}
+	}
+
+}

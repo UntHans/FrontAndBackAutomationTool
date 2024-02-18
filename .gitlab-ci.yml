@@ -1,0 +1,23 @@
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - docker info
+
+build:
+  stage: build
+  script:
+    - docker build -t frontandbackautotool .
+
+test:
+  stage: test
+  script:
+    - docker run frontandbackautotool
+
+deploy:
+  stage: deploy
+  script:
+    - docker push my-registry/frontandbackautotool:latest
+    - echo "Deploying to production..."
