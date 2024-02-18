@@ -64,8 +64,14 @@ Once the tests are completed, HTML reports will be generated in the tests_output
 Open the HTML reports in your preferred web browser.
 
 #### Example:
-Front End Report: tests_output/fe/nightwatch-html-report/index.html
-Back End Report: tests_output/be/nightwatch-html-report/index.html
+Front End Report: 
+ ```bash
+tests_output/fe/nightwatch-html-report/index.html
+```
+Back End Report: 
+ ```bash
+tests_output/be/nightwatch-html-report/index.html
+```
 You can navigate to these directories and open the index.html file to view detailed test reports.
 
 ### Docker (Optional)
