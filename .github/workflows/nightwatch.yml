@@ -25,21 +25,46 @@ jobs:
     - name: Setup ChromeDriver
       uses: nanasess/setup-chromedriver@v2
     - run:  chromedriver --url-base=/wd/hub &
-    
+
+    - name: Create Reports Directory
+    - run: |
+          mkdir tests_output/fe/nightwatch-html-report
+          mkdir tests_output/be/nightwatch-html-report
       
     - name: Run Regression Testing for Nightwatch.js Tests and Generate HTML Report
       run: npm run testregression
 
-    - name: Report Front End HTML Preview
-      id: html_preview_fe
-      uses: pavi2410/html-preview-action@v2
+    - name: Upload Frontend Report
+      uses: actions/upload-artifact@v4.3.1
       with:
-        html_file: ./tests_output/be/nightwatch-html-report/index.html
+        name: frontend-report
+        path: tests_output/fe/nightwatch-html-report
 
-    - name: Report Back End HTML Preview
-      id: html_preview_be
-      uses: pavi2410/html-preview-action@v2
+    - name: Upload Backend Report
+      uses: actions/upload-artifact@v4.3.1
       with:
-        html_file: ./tests_output/fe/nightwatch-html-report/index.html
-        
-        
+        name: backend-report
+        path: tests_output/be/nightwatch-html-report
+
+  cleanup:
+    runs-on: windows-latest
+
+    steps:
+      - name: Download Frontend Report
+        uses: actions/download-artifact@v4.3.1
+        with:
+          name: frontend-report
+          path: frontend-report
+
+      - name: Download Backend Report
+        uses: actions/download-artifact@v4.3.1
+        with:
+          name: backend-report
+          path: backend-report
+
+      - name: Move Reports to Public Directory
+        run: |
+          mkdir C:\public
+          move frontend-report C:\public\frontend-report
+          move backend-report C:\public\backend-report
+        working-directory: ${{ github.workspace }}
