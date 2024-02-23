@@ -23,7 +23,7 @@ jobs:
       run: npm install
     
     - name: Setup ChromeDriver
-      uses: nanasess/setup-chromedriver@v23
+      uses: nanasess/setup-chromedriver@v2
     - run:  chromedriver --url-base=/wd/hub &
     
       
