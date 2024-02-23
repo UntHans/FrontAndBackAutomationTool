@@ -9,7 +9,7 @@
   "scripts": {
     "testfe": "nightwatch /tests/front_end --env default --output ./tests_output/fe",
     "testbe": "nightwatch /tests/back_end --env api_testing --output ./tests_output/be",
-    "testregression" : "npm run testfe && npm run testbe"
+    "testregression": "npm run testfe && npm run testbe"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,7 @@
     "@nightwatch/apitesting": "^3.1.3",
     "ajv": "^8.12.0",
     "chromedriver": "121",
-    "nightwatch": "^3.0.1"
+    "nightwatch": "^3.0.1",
+    "typescript": "^5.3.3"
   }
 }
