@@ -27,7 +27,7 @@ jobs:
     - run:  chromedriver --url-base=/wd/hub &
 
     - name: Create Reports Directory
-    - run: |
+      run: |
           mkdir tests_output/fe/nightwatch-html-report
           mkdir tests_output/be/nightwatch-html-report
       
