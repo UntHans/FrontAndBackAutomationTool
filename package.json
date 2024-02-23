@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "testfe": "nightwatch /tests/front_end --env default --output ./tests_output/fe",
+    "testfe": "nightwatch /tests/front_end --output ./tests_output/fe",
     "testbe": "nightwatch /tests/back_end --env api_testing --output ./tests_output/be",
     "testregression": "npm run testfe && npm run testbe"
   },

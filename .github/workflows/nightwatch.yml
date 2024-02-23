@@ -21,6 +21,24 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
+    
+    - name: Setup ChromeDriver
+      run: |
+        CHROMEDRIVER_VERSION=$(npm info chromedriver version)
+        CHROMEDRIVER_DIR=$RUNNER_TOOL_CACHE/chromedriver/$CHROMEDRIVER_VERSION/x64
+        CHROMEDRIVER_PATH=$CHROMEDRIVER_DIR/chromedriver
+
+        if [ ! -f "$CHROMEDRIVER_PATH" ]; then
+          mkdir -p $CHROMEDRIVER_DIR
+          curl -sS -L https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip -o chromedriver.zip
+          unzip chromedriver.zip -d $CHROMEDRIVER_DIR
+          rm chromedriver.zip
+          chmod +x $CHROMEDRIVER_PATH
+        fi
+
+        echo "##[add-path]$CHROMEDRIVER_DIR"
+        echo "##vso[task.prependpath]$CHROMEDRIVER_DIR"
+      shell: bash
 
     - name: Run Regression Testing for Nightwatch.js Tests and Generate HTML Report
       run: npm run testregression
