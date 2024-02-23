@@ -48,48 +48,28 @@ module.exports = {
   
         desiredCapabilities: {
           browserName: 'chrome',
-          acceptSslCerts: false
-        },
-  
-        webdriver: {
-          start_process: true,
-          server_path: 'node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
-          port: 9515,
-          host: 'localhost',
-          ssl: false,
-          default_path_prefix: '',
-          proxy: undefined,
-          cli_args: ['--ignore-certificate-errors']
-        },
-  
-      },
-  
-      chrome: {
-        desiredCapabilities: {
-          browserName: 'chrome',
+          acceptSslCerts: false,
           'goog:chromeOptions': {
-            // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-            //
-            // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-            w3c: true,
-            args: [
-              //'--no-sandbox',
-              '--ignore-certificate-errors',
-              //'--allow-insecure-localhost',
-              //'--headless'
-            ]
+            args: ['--ignore-certificate-errors' ,'--disable-popup-blocking'],  // Add any other necessary options
+          },
+          prefs: {
+            'profile.default_content_setting_values.notifications': 2,
+            'profile.managed_default_content_settings.cookies': 2
           }
         },
   
         webdriver: {
           start_process: true,
-          server_path: '',
-          cli_args: [
-            // --verbose
-          ]
-        }
+          server_path:  require('chromedriver').path,
+          port: 9515,
+          host: 'localhost',
+          ssl: false,
+          default_path_prefix: '',
+          proxy: undefined
+        },
+  
       },
-
+  
       api_testing: {
         start_session: false,
         webdriver: {
