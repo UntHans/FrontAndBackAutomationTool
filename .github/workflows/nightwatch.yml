@@ -45,26 +45,3 @@ jobs:
       with:
         name: backend-report
         path: tests_output/be/nightwatch-html-report
-
-  cleanup:
-    runs-on: windows-latest
-
-    steps:
-      - name: Download Frontend Report
-        uses: actions/download-artifact@v4.3.1
-        with:
-          name: frontend-report
-          path: frontend-report
-
-      - name: Download Backend Report
-        uses: actions/download-artifact@v4.3.1
-        with:
-          name: backend-report
-          path: backend-report
-
-      - name: Move Reports to Public Directory
-        run: |
-          mkdir C:\public
-          move frontend-report C:\public\frontend-report
-          move backend-report C:\public\backend-report
-        working-directory: ${{ github.workspace }}
