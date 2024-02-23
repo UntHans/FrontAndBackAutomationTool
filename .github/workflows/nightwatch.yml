@@ -1,0 +1,40 @@
+name: Nightwatch.js Market Watch Regression Test
+run-name: ${{ github.actor }} is running Market Watch Regression Test on GitHub Actions 🚀
+
+on:
+    push:
+      branches:
+        - main
+
+jobs:
+  regtest:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set Up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Regression Testing for Nightwatch.js Tests and Generate HTML Report
+      run: npm run testregression
+
+    - name: Report Front End HTML Preview
+      id: html_preview_fe
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: ./tests_output/be/nightwatch-html-report/index.html
+
+    - name: Report Back End HTML Preview
+      id: html_preview_be
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: ./tests_output/fe/nightwatch-html-report/index.html
+        
+        
