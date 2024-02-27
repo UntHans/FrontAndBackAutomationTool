@@ -1,4 +1,6 @@
+
 module.exports = {
+    url:'https://www.marketwatch.com/investing/index/spx',
     elements: {
         closeButton: {
             selector: '.close-btn'
