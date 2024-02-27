@@ -14,7 +14,7 @@ const validate_all_countries = ajv.compile(schema_all_countries)
 
 //When calling /all enpoint to retrieve body to compare against
 describe('Response Schema Validation', function () {
-    it('get validation of all countries schema', async function({supertest}) {
+    it('get schema validation against all countries response', async function({supertest}) {
       await supertest
         .request("https://restcountries.com/v3.1")
         .get("/all")

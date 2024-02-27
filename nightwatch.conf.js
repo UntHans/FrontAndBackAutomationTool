@@ -29,8 +29,8 @@ module.exports = {
     plugins: ['@nightwatch/apitesting'],
   
     // See https://nightwatchjs.org/guide/concepts/test-globals.html
-    globals_path: '',    
-  
+    globals_path: './globals/localglobals.js',
+
     test_workers: {
       enabled: true
     },
@@ -38,7 +38,7 @@ module.exports = {
     test_settings: {
       default: {
         disable_error_log: false,
-        launch_url: 'https://www.marketwatch.com/investing/index/spx',
+        launch_url: 'https://www.marketwatch.com/',
   
         screenshots: {
           enabled: true,

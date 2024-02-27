@@ -7,23 +7,21 @@ console or in your test report.
 */
 
 
-let marketWatch = browser.page.marketWatch();
+let marketWatch_SPX = browser.page.marketWatch_SPX();
+const marketWatch_SPX_helpers = require('../../pageobjects/marketWatch_SPX_helpers');
 
 
 //Given user wants to retrieve {top 5 “Bottom Performers”} from Market Watch Tab
 describe('Retrieve the top 5 “Bottom Performers”', function () {
+    
+    //When user has navigated to SPX page
     before(function (browser) {
-      browser.window.maximize()
-      browser.navigateTo('/')
+      browser.navigateTo(marketWatch_SPX.url)
+      browser.assert.titleEquals(marketWatch_SPX_helpers.pageTitle)
     })
-  
-    it('Check to ensure that user is on MarketWatch website', function() {
-      marketWatch.click('@closeButton')
-      marketWatch.waitForElementVisible('@marketPlaceLogo')
-    })
-  
+
     it('Retrieve the top 5 Bottom Performers', function (browser) {
-      marketWatch.waitForElementVisible('@articleHeadline')
+      marketWatch_SPX.waitForElementVisible('@articleHeadline')
 
       for (let i = 1; i < 6; i++) {
         browser.getText('xpath', '//div[6]/div[3]/div[2]/div/table/tbody/tr['+[i]+']/td[1]/a', response => {
